@@ -31,6 +31,12 @@ These scripts requires a VCF file (with a depth field for certain metrics).  The
       python PartitionData.LsalSpecific.py -file statsfile.out -ind ind1,ind3 -avg no -out depth -win 10000 -chr no > output.txt
 
       To see the usage and get further information: python PartitionData.LsalSpecific.py -h
+      
+Optionally, identify regions that differ by missing genotypes between different groups (used for a specific project)
+
+      python SexSpecific.LsalSpecific.py -file statsfile.out -ind1 ind1,ind3 -ind2 ind2,ind4 -win 10000 -fold 2
+      
+      To see the usage and get further information: python SexSpecific.LsalSpecific.py -h
 
 <!-- license -->
 ## License 
