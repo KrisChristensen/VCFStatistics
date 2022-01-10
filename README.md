@@ -14,7 +14,7 @@ A method for visualizing VCF data on a circos plot (data is generated in a forma
 <!-- requirements -->
 ## Requirements
 
-This script has been tested with Python 2.7 and 3 and should work with either.
+These scripts have been tested with Python 2.7 and 3 and should work with either.
 These scripts requires a VCF file (with a depth field for certain metrics).  The VCF file can be compressed with gzip or bgzip.
 
 <!-- usage -->
@@ -23,12 +23,12 @@ These scripts requires a VCF file (with a depth field for certain metrics).  The
 1) Find metrics for each individual in each window
 python VCF.stats.windowBased.v1.0.py -vcf file.vcf -win 10000 -depth 3 > statsfile.out
 
-To see the usage and get further information: python VCF.stats.windowBased.v1.0.py -h
+      To see the usage and get further information: python VCF.stats.windowBased.v1.0.py -h
 
 2) Summarize data for groups and possibly output in a format that can be used with Circos software to visualize.
 python PartitionData.LsalSpecific.py -file statsfile.out -ind ind1,ind3 -avg no -out depth -win 10000 -chr no > output.txt
 
-To see the usage and get further information: python PartitionData.LsalSpecific.py -h
+      To see the usage and get further information: python PartitionData.LsalSpecific.py -h
 
 <!-- license -->
 ## License 
