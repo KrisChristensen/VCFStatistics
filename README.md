@@ -21,12 +21,14 @@ These scripts requires a VCF file (with a depth field for certain metrics).  The
 ## Usage
 
 1) Find metrics for each individual in each window
-python VCF.stats.windowBased.v1.0.py -vcf file.vcf -win 10000 -depth 3 > statsfile.out
+
+      python VCF.stats.windowBased.v1.0.py -vcf file.vcf -win 10000 -depth 3 > statsfile.out
 
       To see the usage and get further information: python VCF.stats.windowBased.v1.0.py -h
 
 2) Summarize data for groups and possibly output in a format that can be used with Circos software to visualize.
-python PartitionData.LsalSpecific.py -file statsfile.out -ind ind1,ind3 -avg no -out depth -win 10000 -chr no > output.txt
+
+      python PartitionData.LsalSpecific.py -file statsfile.out -ind ind1,ind3 -avg no -out depth -win 10000 -chr no > output.txt
 
       To see the usage and get further information: python PartitionData.LsalSpecific.py -h
 
